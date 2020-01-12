@@ -1,0 +1,102 @@
+/*
+Theme Name: DTG
+Description: Beaver Builder Child Theme for Deutsch-Tunesische-Gesellschaft
+Version: 1.0
+Author: mmai
+Author URI: http://www.mai-internet.de
+Template: bb-theme
+*/
+@import "mi_mixins";
+
+$Helles_Gelb:#FFF8DE;
+$Blauer_Hintergrund:#2BA6CB;
+$Braune_Headline: #874f13;
+
+.mm-begruessung {
+  .fl-module-content {
+    // background-color: #92aac5;
+    padding: 20px;
+    // opacity: 0.5;
+    p {
+      color: #FFF !important;
+    }
+  }
+}
+
+.mm_member_table {
+  table {
+    width: 100%;
+    margin-bottom:20px;
+  }
+  td {
+    padding: 10px 3px 10px 3px;
+    border-bottom: 1px solid #CECECE;
+  }
+  h4 {
+    margin:30px 0 20px 0;
+  }
+}
+
+#menu-top_menu, .mm_menu_inpage {
+  a {
+    text-transform: uppercase;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+.mm_beitraege {
+  img {
+    max-width:150px;
+    max-height:150px;
+    overflow:hidden;
+  }
+}
+
+.mm-post-backlink {
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  a {
+    color:#666;
+  }
+  a:after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  a::before, a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+  a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  a:hover::before, a:hover::after, a:focus::before, a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+}
+
+.mi-text-shadow-black {
+  text-shadow: 2px 2px 2px #000000;
+}
+
+
